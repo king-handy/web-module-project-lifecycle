@@ -1,6 +1,7 @@
 import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
-import { GithubUser } from '../components/GithubUser';
+import { GithubUser } from './components/GithubUser';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-           <code>src/App.js</code>
+          <GithubUser />
         </p>
         <a
           className="App-link"
@@ -16,7 +17,6 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GithubUser />
         </a>
       </header>
     </div>
